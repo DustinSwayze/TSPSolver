@@ -23,7 +23,12 @@ namespace TSPme
                 new City(11, -7795, -5000),
                 new City(12, -4521, 1266),
                 new City(13, -192, 3337),
-                new City(14, -9860, 1311)
+                new City(14, -9860, 1311),
+                new City(15, -541, -5135),
+                new City(16, -2385, 5987),
+                //new City(17, -2492, 1009),
+                //new City(18, 4769, -1813),
+                //new City(19, -2741, -6197)
             };
 
 
@@ -88,15 +93,15 @@ namespace TSPme
 
             stopwatch.Stop();
             
+            
+
+            DisplayResults((resultPath, totalDistance), "Approximation Algorithm", stopwatch.ElapsedMilliseconds);
+
             // Generate path output
             //string pathOutput = "City Path: " + string.Join(" -> ", resultPath.Select(city => city.Id));
             //Console.WriteLine(pathOutput);
             //Console.WriteLine($"Total distance traveled: {totalDistance:N2} units");
             //Console.WriteLine($"Time taken: {stopwatch.ElapsedMilliseconds} ms");
-
-            DisplayResults((resultPath, totalDistance), "Approximation Algorithm", stopwatch.ElapsedMilliseconds);
-
-
 
 
         }
@@ -106,10 +111,11 @@ namespace TSPme
             stopwatch.Start();
 
             NearestNeighborSolver nnSolver = new NearestNeighborSolver(cities);
-            stopwatch.Stop();
+            
             
             DisplayResults(nnSolver.Solve(),  "NN Algo", stopwatch.ElapsedMilliseconds);
-            Console.WriteLine($"Time taken: {stopwatch.ElapsedMilliseconds} ms");
+            stopwatch.Stop();
+            //Console.WriteLine($"Time taken: {stopwatch.ElapsedMilliseconds} ms");
 
         }
 
@@ -120,14 +126,15 @@ namespace TSPme
 
             NaiveBruteForceSolver nbfSolver = new NaiveBruteForceSolver(cities);
             var (resultPath, totalDistance) = nbfSolver.Solve();
+            stopwatch.Stop();
 
+
+
+
+            DisplayResults((resultPath, totalDistance), "NBF Algo", stopwatch.ElapsedMilliseconds);
+
+            //Console.WriteLine($"Time taken: {stopwatch.ElapsedMilliseconds} ms");
             
-
-            
-
-            DisplayResults(nbfSolver.Solve(), "NBF Algo", stopwatch.ElapsedMilliseconds);
-
-            Console.WriteLine($"Time taken: {stopwatch.ElapsedMilliseconds} ms");
 
             // Output the results
             //string pathOutput = "City Path: " + string.Join(" -> ", resultPath.Select(city => city.Id));
@@ -146,7 +153,7 @@ namespace TSPme
             
             DisplayResults(mbfSolver.Solve(), "MBF Algo", stopwatch.ElapsedMilliseconds);
             stopwatch.Stop();
-            Console.WriteLine($"Time taken: {stopwatch.ElapsedMilliseconds} ms");
+            //Console.WriteLine($"Time taken: {stopwatch.ElapsedMilliseconds} ms");
         } 
         public static void PMBF(List<City> cities)
         {
@@ -159,7 +166,7 @@ namespace TSPme
 
             DisplayResults(mbfpSolver.Solve(), "PMBF Algo", stopwatch.ElapsedMilliseconds);
             stopwatch.Stop();
-            Console.WriteLine($"Time taken: {stopwatch.ElapsedMilliseconds} ms");
+            //Console.WriteLine($"Time taken: {stopwatch.ElapsedMilliseconds} ms");
         }
 
         private static void LogResults(string solverName, string pathOutput, double totalDistance, long timeTakenMs)
@@ -201,7 +208,7 @@ namespace TSPme
             Console.WriteLine($"Total distance traveled: {totalDistance:N2} units");
             string pathString = "[" + string.Join(",", path.Select(city => city.Id)) + "]";
             pathOutput = pathOutput + ", path=" + pathString;
-
+            Console.WriteLine($"Time taken: {timeTaken} ms");
 
             // Log the results
             LogResults(solverName, pathOutput, totalDistance, timeTaken);

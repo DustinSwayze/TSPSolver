@@ -4,3 +4,24 @@
 4/24/2024 3:10:02 AM: Solver - MBF Algo, Path - City Path: 0 -> 3 -> 13 -> 12 -> 4 -> 7 -> 14 -> 6 -> 5 -> 11 -> 1 -> 9 -> 2 -> 10 -> 8 -> 0, Distance - 68,534.24 units, Time - 26056 ms
 4/24/2024 3:10:10 AM: Solver - PMBF Algo, Path - City Path: 0 -> 1 -> 11 -> 5 -> 6 -> 14 -> 7 -> 12 -> 4 -> 3 -> 13 -> 9 -> 2 -> 10 -> 8 -> 0, Distance - 66,566.24 units, Time - 5234 ms
 4/24/2024 3:15:37 AM: Solver - NN Algo, Path - City Path: 0 -> 13 -> 12 -> 4 -> 7 -> 14 -> 6 -> 5 -> 11 -> 1 -> 9 -> 2 -> 10 -> 8 -> 3 -> 0path=[0,13,12,4,7,14,6,5,11,1,9,2,10,8,3,0], Distance - 73,853.91 units, Time - 0 ms
+4/24/2024 6:11:13 PM: Solver - Approximation Algorithm, Path - City Path: 0 -> 1 -> 5 -> 11 -> 6 -> 7 -> 14 -> 12 -> 4 -> 2 -> 8 -> 10 -> 3 -> 9 -> 13 -> 0, path=[0,1,5,11,6,7,14,12,4,2,8,10,3,9,13,0], Distance - 90,002.35 units, Time - 10 ms
+4/24/2024 6:32:52 PM: Solver - NN Algo, Path - City Path: 0 -> 17 -> 12 -> 4 -> 7 -> 14 -> 6 -> 5 -> 11 -> 19 -> 15 -> 1 -> 13 -> 16 -> 3 -> 9 -> 18 -> 2 -> 10 -> 8 -> 0, path=[0,17,12,4,7,14,6,5,11,19,15,1,13,16,3,9,18,2,10,8,0], Distance - 77,704.08 units, Time - 0 ms
+4/24/2024 6:43:34 PM: Solver - MBF Algo, Path - City Path: 0 -> 3 -> 13 -> 12 -> 4 -> 7 -> 14 -> 6 -> 5 -> 11 -> 1 -> 15 -> 9 -> 2 -> 10 -> 8 -> 0, path=[0,3,13,12,4,7,14,6,5,11,1,15,9,2,10,8,0], Distance - 70,858.62 units, Time - 138306 ms
+4/24/2024 6:55:59 PM: Solver - NBF Algo, Path - City Path: 0 -> 9 -> 2 -> 10 -> 8 -> 1 -> 11 -> 5 -> 6 -> 7 -> 4 -> 3 -> 0, path=[0,9,2,10,8,1,11,5,6,7,4,3,0], Distance - 61,355.83 units, Time - 164490 ms
+4/24/2024 7:00:15 PM: Solver - NBF Algo, Path - City Path: 0 -> 9 -> 2 -> 10 -> 8 -> 1 -> 11 -> 5 -> 6 -> 7 -> 4 -> 3 -> 0, path=[0,9,2,10,8,1,11,5,6,7,4,3,0], Distance - 61,355.83 units, Time - 164635 ms
+4/24/2024 7:00:52 PM: Solver - NBF Algo, Path - City Path: 0 -> 3 -> 4 -> 7 -> 6 -> 5 -> 1 -> 8 -> 2 -> 9 -> 0, path=[0,3,4,7,6,5,1,8,2,9,0], Distance - 57,896.18 units, Time - 1534 ms
+4/24/2024 7:02:37 PM: Solver - NBF Algo, Path - City Path: 0 -> 9 -> 2 -> 10 -> 8 -> 1 -> 5 -> 6 -> 7 -> 4 -> 3 -> 0, path=[0,9,2,10,8,1,5,6,7,4,3,0], Distance - 59,985.11 units, Time - 14355 ms
+4/24/2024 7:03:29 PM: Solver - NN Algo, Path - City Path: 0 -> 1 -> 5 -> 6 -> 7 -> 4 -> 3 -> 9 -> 2 -> 10 -> 8 -> 0, path=[0,1,5,6,7,4,3,9,2,10,8,0], Distance - 60,762.28 units, Time - 0 ms
+4/24/2024 7:03:35 PM: Solver - NN Algo, Path - City Path: 0 -> 1 -> 5 -> 6 -> 7 -> 4 -> 3 -> 9 -> 2 -> 10 -> 8 -> 0, path=[0,1,5,6,7,4,3,9,2,10,8,0], Distance - 60,762.28 units, Time - 0 ms
+4/24/2024 7:04:20 PM: Solver - NN Algo, Path - City Path: 0 -> 1 -> 5 -> 6 -> 7 -> 4 -> 3 -> 9 -> 2 -> 10 -> 8 -> 0, path=[0,1,5,6,7,4,3,9,2,10,8,0], Distance - 60,762.28 units, Time - 0 ms
+4/24/2024 7:04:23 PM: Solver - Approximation Algorithm, Path - City Path: 0 -> 1 -> 4 -> 3 -> 7 -> 5 -> 6 -> 2 -> 8 -> 10 -> 9 -> 0, path=[0,1,4,3,7,5,6,2,8,10,9,0], Distance - 75,053.84 units, Time - 7 ms
+4/24/2024 7:04:40 PM: Solver - NBF Algo, Path - City Path: 0 -> 9 -> 2 -> 10 -> 8 -> 1 -> 5 -> 6 -> 7 -> 4 -> 3 -> 0, path=[0,9,2,10,8,1,5,6,7,4,3,0], Distance - 59,985.11 units, Time - 14278 ms
+4/24/2024 7:05:12 PM: Solver - NN Algo, Path - City Path: 0 -> 1 -> 5 -> 6 -> 7 -> 4 -> 3 -> 9 -> 2 -> 10 -> 8 -> 0, path=[0,1,5,6,7,4,3,9,2,10,8,0], Distance - 60,762.28 units, Time - 1 ms
+4/24/2024 7:05:15 PM: Solver - Approximation Algorithm, Path - City Path: 0 -> 1 -> 4 -> 3 -> 7 -> 5 -> 6 -> 2 -> 8 -> 10 -> 9 -> 0, path=[0,1,4,3,7,5,6,2,8,10,9,0], Distance - 75,053.84 units, Time - 7 ms
+4/24/2024 7:05:21 PM: Solver - MBF Algo, Path - City Path: 0 -> 3 -> 4 -> 7 -> 6 -> 5 -> 1 -> 9 -> 2 -> 10 -> 8 -> 0, path=[0,3,4,7,6,5,1,9,2,10,8,0], Distance - 61,950.55 units, Time - 129 ms
+4/24/2024 7:05:25 PM: Solver - PMBF Algo, Path - City Path: 0 -> 1 -> 5 -> 6 -> 7 -> 4 -> 3 -> 9 -> 2 -> 10 -> 8 -> 0, path=[0,1,5,6,7,4,3,9,2,10,8,0], Distance - 60,762.28 units, Time - 240 ms
+4/24/2024 7:05:44 PM: Solver - NBF Algo, Path - City Path: 0 -> 9 -> 2 -> 10 -> 8 -> 1 -> 5 -> 6 -> 7 -> 4 -> 3 -> 0, path=[0,9,2,10,8,1,5,6,7,4,3,0], Distance - 59,985.11 units, Time - 13677 ms
+4/24/2024 7:08:43 PM: Solver - NBF Algo, Path - City Path: 0 -> 9 -> 2 -> 10 -> 8 -> 1 -> 11 -> 5 -> 6 -> 7 -> 4 -> 3 -> 0, path=[0,9,2,10,8,1,11,5,6,7,4,3,0], Distance - 61,355.83 units, Time - 162984 ms
+4/24/2024 7:10:52 PM: Solver - MBF Algo, Path - City Path: 0 -> 3 -> 4 -> 7 -> 6 -> 5 -> 11 -> 1 -> 9 -> 2 -> 10 -> 8 -> 0, path=[0,3,4,7,6,5,11,1,9,2,10,8,0], Distance - 63,321.28 units, Time - 325 ms
+4/24/2024 7:20:04 PM: Solver - NBF Algo, Path - City Path: 0 -> 9 -> 2 -> 10 -> 8 -> 1 -> 11 -> 5 -> 6 -> 7 -> 4 -> 3 -> 0, path=[0,9,2,10,8,1,11,5,6,7,4,3,0], Distance - 61,355.83 units, Time - 167684 ms
+4/24/2024 7:20:47 PM: Solver - MBF Algo, Path - City Path: 0 -> 3 -> 13 -> 12 -> 4 -> 7 -> 6 -> 5 -> 11 -> 1 -> 9 -> 2 -> 10 -> 8 -> 0, path=[0,3,13,12,4,7,6,5,11,1,9,2,10,8,0], Distance - 67,173.05 units, Time - 6290 ms
