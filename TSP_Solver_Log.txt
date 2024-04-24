@@ -1,0 +1,6 @@
+4/24/2024 3:09:13 AM: Solver - NN Algo, Path - City Path: 0 -> 13 -> 12 -> 4 -> 7 -> 14 -> 6 -> 5 -> 11 -> 1 -> 9 -> 2 -> 10 -> 8 -> 3 -> 0, Distance - 73,853.91 units, Time - 0 ms
+4/24/2024 3:09:32 AM: Solver - NN Algo, Path - City Path: 0 -> 13 -> 12 -> 4 -> 7 -> 14 -> 6 -> 5 -> 11 -> 1 -> 9 -> 2 -> 10 -> 8 -> 3 -> 0, Distance - 73,853.91 units, Time - 0 ms
+4/24/2024 3:09:34 AM: Solver - Approximation Algorithm, Path - City Path: 0 -> 1 -> 5 -> 11 -> 6 -> 7 -> 14 -> 12 -> 4 -> 2 -> 8 -> 10 -> 3 -> 9 -> 13 -> 0, Distance - 90,002.35 units, Time - 7 ms
+4/24/2024 3:10:02 AM: Solver - MBF Algo, Path - City Path: 0 -> 3 -> 13 -> 12 -> 4 -> 7 -> 14 -> 6 -> 5 -> 11 -> 1 -> 9 -> 2 -> 10 -> 8 -> 0, Distance - 68,534.24 units, Time - 26056 ms
+4/24/2024 3:10:10 AM: Solver - PMBF Algo, Path - City Path: 0 -> 1 -> 11 -> 5 -> 6 -> 14 -> 7 -> 12 -> 4 -> 3 -> 13 -> 9 -> 2 -> 10 -> 8 -> 0, Distance - 66,566.24 units, Time - 5234 ms
+4/24/2024 3:15:37 AM: Solver - NN Algo, Path - City Path: 0 -> 13 -> 12 -> 4 -> 7 -> 14 -> 6 -> 5 -> 11 -> 1 -> 9 -> 2 -> 10 -> 8 -> 3 -> 0path=[0,13,12,4,7,14,6,5,11,1,9,2,10,8,3,0], Distance - 73,853.91 units, Time - 0 ms

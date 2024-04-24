@@ -89,10 +89,10 @@ namespace TSPme
             stopwatch.Stop();
             
             // Generate path output
-            string pathOutput = "City Path: " + string.Join(" -> ", resultPath.Select(city => city.Id));
-            Console.WriteLine(pathOutput);
-            Console.WriteLine($"Total distance traveled: {totalDistance:N2} units");
-            Console.WriteLine($"Time taken: {stopwatch.ElapsedMilliseconds} ms");
+            //string pathOutput = "City Path: " + string.Join(" -> ", resultPath.Select(city => city.Id));
+            //Console.WriteLine(pathOutput);
+            //Console.WriteLine($"Total distance traveled: {totalDistance:N2} units");
+            //Console.WriteLine($"Time taken: {stopwatch.ElapsedMilliseconds} ms");
 
             DisplayResults((resultPath, totalDistance), "Approximation Algorithm", stopwatch.ElapsedMilliseconds);
 
@@ -164,8 +164,30 @@ namespace TSPme
 
         private static void LogResults(string solverName, string pathOutput, double totalDistance, long timeTakenMs)
         {
-            string logMessage = $"{DateTime.Now}: Solver - {solverName}, Path - {pathOutput}, Distance - {totalDistance:N2} units, Time - {timeTakenMs} ms";
-            File.AppendAllText("TSP_Solver_Log.txt", logMessage + Environment.NewLine);
+            try
+            {
+
+                string logMessage = $"{DateTime.Now}: Solver - {solverName}, Path - {pathOutput}, Distance - {totalDistance:N2} units, Time - {timeTakenMs} ms";
+                // Navigate up three directories from the current directory
+                string filePath = @"../../../TSP_Solver_Log.txt";
+
+                // Ensure that the calculated path is absolute
+                string absoluteFilePath = Path.GetFullPath(filePath);
+
+                // Check if the directory exists; if not, create it.
+                string directory = Path.GetDirectoryName(absoluteFilePath);
+                if (!Directory.Exists(directory))
+                {
+                    Directory.CreateDirectory(directory);
+                }
+
+                // Append the log message to the file
+                File.AppendAllText(absoluteFilePath, logMessage + Environment.NewLine);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Failed to write to log file: {ex.Message}");
+            }
         }
 
 
@@ -177,6 +199,9 @@ namespace TSPme
             string pathOutput = "City Path: " + string.Join(" -> ", path.Select(city => city.Id));
             Console.WriteLine(pathOutput);
             Console.WriteLine($"Total distance traveled: {totalDistance:N2} units");
+            string pathString = "[" + string.Join(",", path.Select(city => city.Id)) + "]";
+            pathOutput = pathOutput + ", path=" + pathString;
+
 
             // Log the results
             LogResults(solverName, pathOutput, totalDistance, timeTaken);
