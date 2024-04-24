@@ -43,6 +43,7 @@ namespace TSPme
                 remainingCities.Remove(current);
             }
 
+            path.Add(path[0]); // Optionally add to make the return explicit in the path list
             totalDistance += current.DistanceTo(path[0]);
 
             return (path, totalDistance);

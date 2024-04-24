@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace TSPme
 {
-    public class ModifiedBruteForceSolver
+    public class MBFSolver
     {
         public List<City> Cities { get; set; }
         private double bestDistance = double.MaxValue;
         private List<City> bestRoute = null;
 
-        public ModifiedBruteForceSolver(List<City> cities)
+        public MBFSolver(List<City> cities)
         {
             // Ensure that the city with coordinates (0, 0) is always the start city
             Cities = cities.OrderBy(c => c.X == 0 && c.Y == 0 ? 0 : 1).ToList();
