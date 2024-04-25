@@ -24,8 +24,8 @@ namespace TSPme
                 new City(12, -4521, 1266),
                 new City(13, -192, 3337),
                 new City(14, -9860, 1311),
-                new City(15, -541, -5135),
-                new City(16, -2385, 5987),
+                //new City(15, -541, -5135),
+                //new City(16, -2385, 5987),
                 //new City(17, -2492, 1009),
                 //new City(18, 4769, -1813),
                 //new City(19, -2741, -6197)
@@ -41,8 +41,9 @@ namespace TSPme
                 Console.WriteLine("3. Naive Brute Force Solver (DO NOT CHOOSE THIS)");
                 Console.WriteLine("4. Modified Brute Force");
                 Console.WriteLine("5. Parallel Modified Brute Force");
-                Console.WriteLine("6. Exit");
-                Console.Write("Enter your choice (1-6): ");
+                Console.WriteLine("6. Clear Console");
+                Console.WriteLine("7. Exit");
+                Console.Write("Enter your choice (1-7): ");
 
                 string input = Console.ReadLine();
                 switch (input)
@@ -63,10 +64,13 @@ namespace TSPme
                         PMBF(cities);
                         break;
                     case "6":
+                        Console.Clear();
+                        break;
+                    case "7":
                         exit = true;
                         break;
                     default:
-                        Console.WriteLine("Invalid choice, please choose a number between 1 and 6.");
+                        Console.WriteLine("Invalid choice, please choose a number between 1 and 7.");
                         break;
                 }
             }
@@ -204,6 +208,7 @@ namespace TSPme
         {
             var (path, totalDistance) = result;
             string pathOutput = "City Path: " + string.Join(" -> ", path.Select(city => city.Id));
+            Console.WriteLine("\n");
             Console.WriteLine(pathOutput);
             Console.WriteLine($"Total distance traveled: {totalDistance:N2} units");
             string pathString = "[" + string.Join(",", path.Select(city => city.Id)) + "]";
